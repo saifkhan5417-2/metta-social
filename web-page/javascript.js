@@ -19,11 +19,15 @@ async function click(e) {
 
         // Clear previous cards
         cardsContainer.innerHTML = "";
+        cardsContainer.style.maxWidth = "80%"
+        cardsContainer.style.margin = "auto"
+        // max-width: 80%;
+        // margin: auto;
 
         // Create and append cards dynamically
         data.forEach(country => {
             const card = document.createElement("div");
-            card.className = "card col mb-4 mx-3";
+            card.className = "card col mb-3 mx-3";
             card.style = "width: 18rem;";
 
             const img = document.createElement("img");
